@@ -8,8 +8,10 @@ import {bootstrapExtra} from "@workadventure/scripting-api-extra";
 bootstrapExtra().catch(e => console.error(e));
 
 let currentPopup: any = undefined;
+
 const today = new Date();
 const time = today.getHours() + ":" + today.getMinutes();
+
 
 WA.room.onEnterZone('clock', () => {
     currentPopup =  WA.ui.openPopup("clockPopup","It's " + time,[]);
@@ -21,5 +23,5 @@ function closePopUp(){
     if (currentPopup !== undefined) {
         currentPopup.close();
         currentPopup = undefined;
-    }
+   }
 }
