@@ -1,5 +1,7 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 
+WA.chat.sendChatMessage('Welcome to Atomic Energy Week 49!', 'AEW49');
+
 import {bootstrapExtra} from "@workadventure/scripting-api-extra";
 
 // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure.
