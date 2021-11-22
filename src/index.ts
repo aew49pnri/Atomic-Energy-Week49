@@ -38,8 +38,6 @@ WA.room.onEnterZone('entrance', () => {
 
 WA.room.onLeaveZone('entrance', closePopUp)
 
-
-
 function closePopUp(){
     if (currentPopup !== undefined) {
         currentPopup.close();
