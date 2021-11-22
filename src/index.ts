@@ -19,6 +19,27 @@ WA.room.onEnterZone('clock', () => {
 
 WA.room.onLeaveZone('clock', closePopUp)
 
+WA.room.onEnterZone('clock1', () => {
+    currentPopup =  WA.ui.openPopup("clockPopup1","It's " + time,[]);
+})
+
+WA.room.onLeaveZone('clock1', closePopUp)
+
+
+WA.room.onEnterZone('nook', () => {
+    currentPopup =  WA.ui.openPopup("nookPopup","Welcome to Smartys Nook! ",[]);
+})
+
+WA.room.onLeaveZone('nook', closePopUp)
+
+WA.room.onEnterZone('entrance', () => {
+    currentPopup =  WA.ui.openPopup("entrancePopup","Welcome to AEW Technical Exhibit! ",[]);
+})
+
+WA.room.onLeaveZone('nook', closePopUp)
+
+
+
 function closePopUp(){
     if (currentPopup !== undefined) {
         currentPopup.close();
