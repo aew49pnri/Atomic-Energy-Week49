@@ -36,7 +36,7 @@ WA.room.onEnterZone('entrance', () => {
     currentPopup =  WA.ui.openPopup("entrancePopup","Welcome to AEW Technical Exhibit! ",[]);
 })
 
-WA.room.onLeaveZone('nook', closePopUp)
+WA.room.onLeaveZone('entrance', closePopUp)
 
 
 
