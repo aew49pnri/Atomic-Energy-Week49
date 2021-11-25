@@ -1,3 +1,5 @@
+// ATOMIC ENERGY WEEK CODE //
+
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 
 WA.chat.sendChatMessage('Welcome to Atomic Energy Week 49 Event!', 'AEW49');
@@ -32,9 +34,7 @@ WA.room.onEnterZone('nook', () => {
 
 WA.room.onLeaveZone('nook', closePopUp)
 
-WA.room.onEnterZone('entrance', () => {
-    currentPopup =  WA.ui.openPopup("entrancePopup","Welcome to AEW Technical Exhibit! ",[]);
-})
+WA.room.onEnterZone('entrance', () => { currentPopup = WA.ui.openPopup("entrancePopup","Welcome to AEW49 TECHNICAL EXHIBIT! ",[{ label: "Go to website", className: "primary", callback: (popup) => { WA.nav.openTab('https://www.youtube.com/watch?v=IepFqBJCack'); popup.close(); } }]); });
 
 WA.room.onLeaveZone('entrance', closePopUp)
 
