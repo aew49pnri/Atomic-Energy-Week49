@@ -2,7 +2,7 @@
 
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 
-WA.chat.sendChatMessage('Welcome to Atomic Energy Week 49 Event!', 'AEW49');
+//WA.chat.sendChatMessage('Welcome to Atomic Energy Week 49 Event!', 'AEW49');
 
 import {bootstrapExtra} from "@workadventure/scripting-api-extra";
 
@@ -37,7 +37,7 @@ WA.room.onLeaveZone('nook', closePopUp)
 
 //Exhibit  Information
 WA.room.onEnterZone('entrance', () => { 
-    currentPopup = WA.ui.openPopup("entrancePopup","Welcome to AEW49 TECHNICAL EXHIBIT! ", [
+    currentPopup = WA.ui.openPopup("entrancePopup","AEW49 Atomic Energy Week Technical Exhibits ", [
         { 
             label: "More info", 
             className: "primary", 
@@ -153,6 +153,32 @@ WA.room.onEnterZone('Nook4Zone', () => {
 });
 
 WA.room.onLeaveZone('Nook4Zone', closePopUp)
+
+//Exit
+WA.room.onEnterZone('exit', () => { 
+    currentPopup = WA.ui.openPopup("exitPopup","Go back to Lobby?",[
+        { 
+            label: "Yes", 
+            className: "primary", 
+            callback: (popup) => { WA.nav.openTab('https://aewph.com/tev'); 
+            popup.close(); 
+            } 
+        },
+        {
+            label: "No",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('exit', closePopUp)
+
+
+
 
 
 function closePopUp(){
