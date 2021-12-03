@@ -137,12 +137,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfdShUjhAaMnNPQiaX7ut-gQqdo9qe40KPyrPl4wUF7RLDRIA\/viewform?fbclid=IwAR31yZBMUf20xlbe9a4kk2qI-o2ybCYWF8asSmFiMzYNdowIzCqyxwODyVY"
-                }, 
-                {
-                 "name":"openWebsitePolicy",
-                 "type":"string",
-                 "value":"fullscreen"
+                 "value":"https:\/\/www.canva.com\/design\/DAEwbfh5TL0\/view?embed&fbclid=IwAR1RqQOMDDeyxg-pXyXgJfh8-MgccCZzb3Fexl04vXO-bXhwavSOqX0DtNI"
                 }],
          "type":"tilelayer",
          "visible":true,
