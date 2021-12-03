@@ -42,7 +42,7 @@ WA.room.onEnterZone('entrance', () => {
             label: "More info", 
             className: "primary", 
             callback: (popup) => { 
-                WA.nav.openTab('https://aew.pnri.dost.gov.ph/aew/2021/files/AEW%20Programmes_111921.pdf'); 
+                WA.nav.openTab('https://drive.google.com/file/d/1yDxmlf35ou73vgigCoj3QgwkNyM3OTq-/view?usp=sharing'); 
                 popup.close(); 
             } 
         },
@@ -178,7 +178,115 @@ WA.room.onEnterZone('exit', () => {
 WA.room.onLeaveZone('exit', closePopUp)
 
 
+//Reminder
+WA.room.onEnterZone('reminder', () => { 
+    currentPopup = WA.ui.openPopup("reminderPopup","This #AEW49 interactive Technical Exhibits can only accomodate 15 simultaneous users. Guests are requested to limit their time here (~up to 1hr) to allow others to try and explore this platform. Thank you!",[
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
 
+WA.room.onLeaveZone('reminder', closePopUp)
+
+
+
+// E4 Just for the Health of It (e4a)
+WA.room.onEnterZone('e4a', () => { 
+    currentPopup = WA.ui.openPopup("e4aPopup","Learn more about PET/CT from Dr. Thomas Pascual",[
+        { 
+            label: "Go", 
+            className: "primary", 
+            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/1lqRK1Ccf4qDSPcmzL9kIsMCGUIrde6z3/view?usp=sharing'); 
+            popup.close(); 
+            } 
+        },
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e4a', closePopUp)
+
+// E4 Just for the Health of It (e4b)
+WA.room.onEnterZone('e4b', () => { 
+    currentPopup = WA.ui.openPopup("e4bPopup","Learn more about Radiation Safety in PET/CT from Arcie Bongay",[
+        { 
+            label: "Go", 
+            className: "primary", 
+            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/10n_swtE7xDpfXhHY8fKY_wsB24vGxtxG/view?usp=sharing'); 
+            popup.close(); 
+            } 
+        },
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e4b', closePopUp)
+
+// E4 Just for the Health of It (e4c)
+WA.room.onEnterZone('e4c', () => { 
+    currentPopup = WA.ui.openPopup("e4cPopup","Learn more about the Leksell Gamma Knife",[
+        { 
+            label: "Go", 
+            className: "primary", 
+            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/1KtiARjalGamwyEvZWF-PFNN_iFfvCu7C/view?usp=sharing'); 
+            popup.close(); 
+            } 
+        },
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e4c', closePopUp)
+
+// E4 Just for the Health of It (e4d)
+WA.room.onEnterZone('e4d', () => { 
+    currentPopup = WA.ui.openPopup("e4dPopup","Learn more about radiation safety from Delmar Arzabal",[
+        { 
+            label: "Go", 
+            className: "primary", 
+            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/146fOzisU8LYu3V9tLyfh4XH9kCr2lEBN/view?usp=sharing'); 
+            popup.close(); 
+            } 
+        },
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e4d', closePopUp)
 
 
 function closePopUp(){
