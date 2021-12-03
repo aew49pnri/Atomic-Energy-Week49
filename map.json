@@ -137,7 +137,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.canva.com\/design\/DAEwbfh5TL0\/view?embed&fbclid=IwAR1RqQOMDDeyxg-pXyXgJfh8-MgccCZzb3Fexl04vXO-bXhwavSOqX0DtNI"
+                 "value":"https:\/\/www.canva.com\/design\/DAEwbfh5TL0\/view?embed"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -152,6 +152,11 @@
          "name":"E4aZone",
          "opacity":1,
          "properties":[
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.youtube.com\/embed\/Pk7wNN_KMDc"
+                }, 
                 {
                  "name":"zone",
                  "type":"string",
@@ -171,6 +176,11 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.youtube.com\/embed\/A9LrFIU9Qjs"
+                }, 
+                {
                  "name":"zone",
                  "type":"string",
                  "value":"e4b"
@@ -189,6 +199,11 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.youtube.com\/embed\/B3viqaKOBm0"
+                }, 
+                {
                  "name":"zone",
                  "type":"string",
                  "value":"e4c"
@@ -206,6 +221,11 @@
          "name":"E4dZone",
          "opacity":1,
          "properties":[
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.youtube.com\/embed\/t_AdkENmxf4"
+                }, 
                 {
                  "name":"zone",
                  "type":"string",
@@ -291,6 +311,11 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.canva.com\/design\/DAEwhw7JwQk\/view?embed\n"
+                }, 
+                {
                  "name":"zone",
                  "type":"string",
                  "value":"Nook1Zone"
@@ -308,6 +333,11 @@
          "name":"smartyNook2Zone",
          "opacity":1,
          "properties":[
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/services.pnri.dost.gov.ph\/nstep\/ResourceMaterial\n"
+                }, 
                 {
                  "name":"zone",
                  "type":"string",
@@ -327,6 +357,11 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.canva.com\/design\/DAEwbfh5TL0\/view?embed"
+                }, 
+                {
                  "name":"zone",
                  "type":"string",
                  "value":"Nook3Zone"
@@ -344,6 +379,11 @@
          "name":"smartyNook4Zone",
          "opacity":1,
          "properties":[
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.canva.com\/design\/DAEwaXOmygY\/view?embed"
+                }, 
                 {
                  "name":"zone",
                  "type":"string",
