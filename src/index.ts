@@ -164,6 +164,71 @@ WA.room.onEnterZone('reminder', () => {
 WA.room.onLeaveZone('reminder', closePopUp)
 
 
+//E1a
+WA.room.onEnterZone('e1a', () => { 
+    currentPopup = WA.ui.openPopup("e1aPopup","View more Videos from Labs to Riches",[
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e1a', closePopUp)
+
+//E2a
+WA.room.onEnterZone('e2a', () => { 
+    currentPopup = WA.ui.openPopup("e2aPopup","View more Videos from Rise through NST",[
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e2a', closePopUp)
+
+//E4a
+WA.room.onEnterZone('e4a', () => { 
+    currentPopup = WA.ui.openPopup("e4aPopup","View more Videos from Just for the Health of it!",[
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e4a', closePopUp)
+
+//E5a
+WA.room.onEnterZone('e5a', () => { 
+    currentPopup = WA.ui.openPopup("e5aPopup","View more Videos A Journey from Cradle to Grave",[
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e5a', closePopUp)
+
+
 function closePopUp(){
     if (currentPopup !== undefined) {
         currentPopup.close();
