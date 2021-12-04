@@ -164,6 +164,15 @@ WA.room.onEnterZone('reminder', () => {
 WA.room.onLeaveZone('reminder', closePopUp)
 
 
+
+
+
+
+
+
+
+
+
 //E1a
 WA.room.onEnterZone('e1a', () => { 
     currentPopup = WA.ui.openPopup("e1aPopup","View more Videos from Labs to Riches",[
@@ -227,6 +236,10 @@ WA.room.onEnterZone('e5a', () => {
 });
 
 WA.room.onLeaveZone('e5a', closePopUp)
+
+
+
+
 
 
 function closePopUp(){
