@@ -62,14 +62,6 @@ WA.room.onLeaveZone('entrance', closePopUp)
 //Smarty's Nook Zone 1
 WA.room.onEnterZone('Nook1Zone', () => { 
     currentPopup = WA.ui.openPopup("Nook1ZonePopup","PNRDC Book of Abstracts", [
-        { 
-            label: "Access",
-            className: "primary",
-            callback: (popup) => {
-                WA.nav.openTab('https://www.canva.com/design/DAEwhw7JwQk/vOQ0CoAxGdggdxxN_qT8Tw/view?utm_content=DAEwhw7JwQk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton');
-                popup.close();
-            }
-        },
         {
             label: "X",
             className: "normal",
@@ -86,14 +78,6 @@ WA.room.onLeaveZone('Nook1Zone', closePopUp)
 //Smarty's Nook Zone 2
 WA.room.onEnterZone('Nook2Zone', () => { 
     currentPopup = WA.ui.openPopup("Nook2ZonePopup"," Access to Nuclear 101 education resources", [
-        { 
-            label: "Access",
-            className: "primary",
-            callback: (popup) => { 
-                WA.nav.openTab('https://services.pnri.dost.gov.ph/nstep/ResourceMaterial ');
-                popup.close();
-            }
-        },
         {
             label: "X",
             className: "normal",
@@ -110,14 +94,6 @@ WA.room.onLeaveZone('Nook2Zone', closePopUp)
 //Smarty's Nook Zone 3
 WA.room.onEnterZone('Nook3Zone', () => { 
     currentPopup = WA.ui.openPopup("Nook3ZonePopup","View PNRI Brochures",[
-        { 
-            label: "View", 
-            className: "primary", 
-            callback: (popup) => { 
-                WA.nav.openTab('https://www.canva.com/design/DAEwbfh5TL0/r5ta6utMc1N9ZiHA8VmyTg/view?utm_content=DAEwbfh5TL0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'); 
-                popup.close(); 
-            } 
-        },
         {
             label: "X",
             className: "normal",
@@ -134,13 +110,6 @@ WA.room.onLeaveZone('Nook3Zone', closePopUp)
 //Smarty's Nook Zone 4
 WA.room.onEnterZone('Nook4Zone', () => { 
     currentPopup = WA.ui.openPopup("Nook4ZonePopup","View Library Resources",[
-        { 
-            label: "View", 
-            className: "primary", 
-            callback: (popup) => { WA.nav.openTab('https://www.canva.com/design/DAEwaXOmygY/v0YDNYNW7Cokx0HePvyYsA/view?utm_content=DAEwaXOmygY&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'); 
-            popup.close(); 
-            } 
-        },
         {
             label: "X",
             className: "normal",
@@ -196,16 +165,49 @@ WA.room.onLeaveZone('reminder', closePopUp)
 
 
 
-// E4 Just for the Health of It (e4a)
+
+
+
+
+
+
+
+
+//E1a
+WA.room.onEnterZone('e1a', () => { 
+    currentPopup = WA.ui.openPopup("e1aPopup","View more Videos from Labs to Riches",[
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e1a', closePopUp)
+
+//E2a
+WA.room.onEnterZone('e2a', () => { 
+    currentPopup = WA.ui.openPopup("e2aPopup","View more Videos from Rise through NST",[
+        {
+            label: "X",
+            className: "normal",
+            callback: (popup) => {
+                // Close the popup when the "Close" button is pressed.
+                popup.close();
+            }
+        }
+    ]); 
+});
+
+WA.room.onLeaveZone('e2a', closePopUp)
+
+//E4a
 WA.room.onEnterZone('e4a', () => { 
-    currentPopup = WA.ui.openPopup("e4aPopup","Learn more about PET/CT from Dr. Thomas Pascual",[
-        { 
-            label: "Go", 
-            className: "primary", 
-            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/1lqRK1Ccf4qDSPcmzL9kIsMCGUIrde6z3/view?usp=sharing'); 
-            popup.close(); 
-            } 
-        },
+    currentPopup = WA.ui.openPopup("e4aPopup","View more Videos from Just for the Health of it!",[
         {
             label: "X",
             className: "normal",
@@ -219,16 +221,9 @@ WA.room.onEnterZone('e4a', () => {
 
 WA.room.onLeaveZone('e4a', closePopUp)
 
-// E4 Just for the Health of It (e4b)
-WA.room.onEnterZone('e4b', () => { 
-    currentPopup = WA.ui.openPopup("e4bPopup","Learn more about Radiation Safety in PET/CT from Arcie Bongay",[
-        { 
-            label: "Go", 
-            className: "primary", 
-            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/10n_swtE7xDpfXhHY8fKY_wsB24vGxtxG/view?usp=sharing'); 
-            popup.close(); 
-            } 
-        },
+//E5a
+WA.room.onEnterZone('e5a', () => { 
+    currentPopup = WA.ui.openPopup("e5aPopup","View more Videos A Journey from Cradle to Grave",[
         {
             label: "X",
             className: "normal",
@@ -240,53 +235,11 @@ WA.room.onEnterZone('e4b', () => {
     ]); 
 });
 
-WA.room.onLeaveZone('e4b', closePopUp)
+WA.room.onLeaveZone('e5a', closePopUp)
 
-// E4 Just for the Health of It (e4c)
-WA.room.onEnterZone('e4c', () => { 
-    currentPopup = WA.ui.openPopup("e4cPopup","Learn more about the Leksell Gamma Knife",[
-        { 
-            label: "Go", 
-            className: "primary", 
-            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/1KtiARjalGamwyEvZWF-PFNN_iFfvCu7C/view?usp=sharing'); 
-            popup.close(); 
-            } 
-        },
-        {
-            label: "X",
-            className: "normal",
-            callback: (popup) => {
-                // Close the popup when the "Close" button is pressed.
-                popup.close();
-            }
-        }
-    ]); 
-});
 
-WA.room.onLeaveZone('e4c', closePopUp)
 
-// E4 Just for the Health of It (e4d)
-WA.room.onEnterZone('e4d', () => { 
-    currentPopup = WA.ui.openPopup("e4dPopup","Learn more about radiation safety from Delmar Arzabal",[
-        { 
-            label: "Go", 
-            className: "primary", 
-            callback: (popup) => { WA.nav.openTab('https://drive.google.com/file/d/146fOzisU8LYu3V9tLyfh4XH9kCr2lEBN/view?usp=sharing'); 
-            popup.close(); 
-            } 
-        },
-        {
-            label: "X",
-            className: "normal",
-            callback: (popup) => {
-                // Close the popup when the "Close" button is pressed.
-                popup.close();
-            }
-        }
-    ]); 
-});
 
-WA.room.onLeaveZone('e4d', closePopUp)
 
 
 function closePopUp(){
