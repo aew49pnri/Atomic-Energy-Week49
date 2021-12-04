@@ -38,14 +38,14 @@ WA.room.onLeaveZone('nook', closePopUp)
 //Exhibit  Information
 WA.room.onEnterZone('entrance', () => { 
     currentPopup = WA.ui.openPopup("entrancePopup","AEW49 Atomic Energy Week Technical Exhibits ", [
-        { 
-            label: "More info", 
-            className: "primary", 
-            callback: (popup) => { 
-                WA.nav.openTab('https://drive.google.com/file/d/1yDxmlf35ou73vgigCoj3QgwkNyM3OTq-/view?usp=sharing'); 
-                popup.close(); 
-            } 
-        },
+        //{ 
+        //    label: "More info", 
+        //    className: "primary", 
+       //     callback: (popup) => { 
+       //         WA.nav.openTab('https://drive.google.com/file/d/1yDxmlf35ou73vgigCoj3QgwkNyM3OTq-/view?usp=sharing'); 
+       //         popup.close(); 
+       //     } 
+       // },
         {
             label: "X",
             className: "normal",
